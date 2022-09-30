@@ -15,6 +15,23 @@ h4,
 h5 {
   color: var(--dark-color);
 }
+
+a:link { 
+  text-decoration: none; 
+}
+
+a:visited { 
+  text-decoration: none; 
+}
+
+a:hover { 
+  text-decoration: none; 
+}
+
+a:active { 
+  text-decoration: none;
+ }
+
 .hero {
   position: relative;
   background: url("./images/senior.jpg") center center/cover;
@@ -64,13 +81,32 @@ h5 {
 }
 
 .link {
-  color: var(--orange);
-  padding: 15px 12px;
+  color: var(--dark-color);
+  padding: 10px 8px;
+}
+
+.link.active {
+  border-bottom: solid 1px var(--orange)
 }
 
 .link:hover {
-  color: var(--light-gray);
-  background-color: var(--orange);
+  color: var(--dark-color);
+  border: solid 2px var(--orange);
+  border-radius: 5px;
+}
+
+.content-card {
+  display: flex;
+  max-height: 50%;
+  max-width: 75%;
+  margin-top: 2rem;
+  box-shadow: 2px 2px #300e01;
+}
+
+.img {
+  margin-right: 1rem;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .footer {
